@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.1.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#but").click(function () {
+               $("ol").append("<li>" +$("#name").val() +"</li>");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    Name : <input type="text" id="name" onkeydown = "if (event.keyCode == 13) document.getElementById('but').click()">
+    <button type="button" id="but">Click Here</button>
+    <ol>
+        
+    </ol>
+</body>
+</html>

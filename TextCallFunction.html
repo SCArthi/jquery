@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.2.1.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("#showT").click(function() {
+				//alert("Text :" +$("#print").text());
+				$("#here").text($("#print").text());
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<p id="print">This is the text with <b>Bold</b> Style</p>
+
+
+
+	<button id="showT">Show me the text</button>
+
+	<p id="here"></p>
+</html>
